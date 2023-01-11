@@ -11,17 +11,50 @@
  <body>
 
     <header> 
+<!--
+    pode se colocar uma imagem assim, quando não tem uma imagem ainda
+<img src="https://placeholder.com/200/>
+-->
+
+<!-- a tag Figure pode ser usada para mostrar uma imagem diferente o IMG fica dentro do figure-->
+
+
+<!--Pode usar assim quando vc te uma imagem na sua máquina-->
+
+<picture> <!-- a tag picture ....é um container usado para especificar múltiplos elementos <source> para um elemento específico <img> contido nele. O navegador irá escolher a imagem mais adequada de acordo com o layout atual da página-->
+
+<source srcset="imagem1.jpg" type="image/jpg">
+
+<img src="imagem1.jpg" width="900" height="200"  alt="retangulo com predios em 3d e um lago" />
+
+</picture>
+
     <h1>
       Currículo de Estudos - Fernanda
 </h1>
 
 <h2> Navegação Principal</h2>
-    <nav>
-      <span><a href="primeira.html" target="_self"> Inicio - </a> </span> <! – – target="_self" serve para abrir a página nela mesmo  -->
-      <span> <a href="sobre.html"target="_blank" > Sobre mim - </a></span> <! – – target="_blank" serve para abrir a página em outra aba -->
-      <span> <a href="contato.html" target="_blank"> Contato -</a> </span> <! – – target="_blank" serve para abrir a página em outra aba  -->      
+    <ol>
+      <li><a href="primeira.html" target="_self"> Inicio  </a> </li><! – – target="_self" serve para abrir a página nela mesmo  -->
+      <li> <a href="sobre.html"target="_blank" > Sobre mim  </a></li> <! – – target="_blank" serve para abrir a página em outra aba -->
+      <li> <a href="contato.html" target="_blank"> Contato </a> </li> <! – – target="_blank" serve para abrir a página em outra aba  -->  
+      <ul>
+        <li><a href="https://www.linkedin.com/in/fernandavianafieri/"> Linkedin</li>
 
-    </nav>
+        <li><a href="https://www.facebook.com/fernanda.viana.3388/">Facebook</li>  
+
+        <li> <a href="https://www.linkedin.com"> Telefone
+        <ol>
+        <li>fixo</li>
+        <li>celular</li>
+        <li>comercial</li>  
+
+        </ol>
+        </li>
+
+      </ul>    
+
+    </ol>
 
 
 
@@ -30,7 +63,17 @@
 
     <section>
     <article><h4>Dados Pessoais</h4></article>
-    <article><h4>Documentos</h4></article>
+
+    <article><h4>Documentos</h4>
+
+        <ul> <!-- Lista não ordenada -->
+     <li> RG: 27.999.XXX.x </li>
+     <li>CPF: 435.DDD.XXX.34 </li>
+     <li>Titulo de Eleitor: 2367-Y </li>
+
+        </ul>
+    </article>
+
     <article><h4>Dados de contato...</h4>
     <a href="mailto:vianafernanda.fv@gmail.com"> vianafernanda.fv@gmail.com </a><br/>
     <a href="tel:+5511961616262"> (11) 961616262</a><br/>
@@ -68,8 +111,11 @@
    
    <aside>
        
-      <h2>Experiencia Profissional </h2>              
+      <h2>Experiencia Profissional </h2>   
 
+<ol> <!-- lista ordenada-->
+
+    <li>
          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id elit nisi. Nullam porta arcu quis diam posuere, vitae iaculis risus fringilla. Integer id nisl in erat vestibulum pretium et id lectus. Aliquam malesuada leo ante, vel dictum nulla volutpat quis. Morbi ut mauris congue, efficitur sem sed, rhoncus diam. Vestibulum quis ultrices arcu, sed laoreet libero. Suspendisse aliquam viverra blandit. Praesent facilisis lacinia purus, ac iaculis eros feugiat sed. Quisque sagittis mi vitae porta venenatis. Vivamus ac finibus libero, aliquet dictum libero. Sed at rutrum est. Pellentesque ultricies rhoncus diam a posuere. Phasellus sed venenatis massa.</p>
             <p>Vestibulum non magna justo. Cras sollicitudin erat quam, non pretium ante vehicula eget. Vivamus consequat justo at risus pulvinar, quis maximus velit semper. Vivamus commodo tincidunt iaculis. Donec vulputate, velit ac aliquet vestibulum, mauris urna fermentum nunc, sed sollicitudin enim odio et ante. Integer placerat ut lacus sit amet tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis at varius ipsum. Morbi at malesuada tortor, id mattis orci. Pellentesque eget felis tempor, placerat orci a, sagittis erat. Cras eu pellentesque mauris. Nullam sit amet ex sit amet risus feugiat efficitur. Mauris sit amet nibh rutrum, suscipit quam in, faucibus tellus.
@@ -89,14 +135,81 @@
       </section>
 
           <footer>Término fevereiro 2023</footer>
-
+</li>
+</ol>
        </article>
 
        <nav> Links complementares - 
         Empresa ABC
         </nav>
 
+   </aside>
 
+   <aside>
+       
+       <table border=1>
+           <caption><h4>Horário de estudo</h4></caption>
+
+<thead>
+ <tr>
+  <th>
+    Dias da Semana
+  </th>  
+
+  <th>Segunda-feira</th> 
+  <th>Terça-feira</th>
+  <th>Quarta-feira</th>
+  <th>Quinta-feira</th>
+  <th>Sexta-feira</th>
+  
+ </tr>   
+
+
+</thead>
+
+
+           <tbody>
+               <tr>
+               <td>Manhã</td>   <!--poderia usar o rowspan para preencher o horário da tarde (vertical) que é igual ao da manhã (HTML) -->
+               <td>HTML</td>  
+               <td>CSS</td>  
+               <td>HTML</td>  
+               <td>CSS</td>  
+               <td>Javascript</td>   
+               </tr>
+
+               <tr>
+             <td>Tarde</td>   
+               <td>HTML</td>  
+               <td>CSS</td>  
+               <td>Javascript</td>  <!-- poderia usar o rowspan=2 por que as treês linhas na horizontal contém a mesma informação (javascript)-->
+               <td>Javascript</td>  
+               <td>Javascript</td>        
+               </tr>
+
+
+           </tbody>
+<tfoot>
+<tr>
+ <th>
+    Dias da Semana
+  </th>  
+
+  <th>Segunda-feira</th> 
+  <th>Terça-feira</th>
+  <th>Quarta-feira</th>
+  <th>Quinta-feira</th>
+  <th>Sexta-feira</th>
+
+</tr>    
+
+
+
+</tfoot>
+
+       </table>
+
+<br>
 
    </aside>
 
