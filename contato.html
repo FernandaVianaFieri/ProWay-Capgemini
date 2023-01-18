@@ -11,7 +11,54 @@
 
  <body>
  	
-Contato de  Fernanda
+<form>
+ <!--   <from method="get" action="https://google.com/search">-->
+
+    <input type="text" name="Nome" placeholder="Nome" /><br>
+    <input type="email" name="e-mail" placeholder="joão@gmail.com" /><br>
+    <input type="tel" name="tel" placeholder="(xx)xxxxx-xxxx" /><br>
+    <input type="number" name="idade" placeholder="idade" /><br>
+    <input type="url" name="Linkedin" placeholder="Linkedin URL" /><br>
+    <input type="range" name="urgencia" min=0 max=100 step=0.1/> <br>
+    <input type="checkbox" name="dia-da-semana" value=2 />segunda-feira <br>
+    <input type="checkbox" name="dia-da-semana" value=4 />quarta-feira<br>
+    <input type="checkbox" name="dia-da-semana" value=6 />sexta-feira<br>
+
+<!-- no Radio, o nome precisa ter a mesma descrição, do contrário o usuário consegue selecionar várias opções-->
+<input type="radio" name="horario" value="manha" />Manhã<br>
+<input type="radio" name="horario" value="tarde" />Tarde<br>
+<input type="radio" name="horario" value="noite" />Noite<br>
+
+
+<textarea name="mensagem" cols=50 rows="10" placeholder="Deixe um comentário"></textarea><br><br>
+
+
+<!--O select é indicado para quando o usuário sabe a resposta que vai dar, e o sistema tem bastante opções para mostrar, ex: os estados brasileiros-->
+
+<select name="estado">
+<option value="">Selecione o estado</option>
+<option value="São Paulo">São Paulo</option>
+<option value="Rio de Janeiro">Rio de Janeiro</option>
+<option value="Minas Gerais">Minas Gerais</option>
+</select><br><br>
+<!--o datalist é utilizado para quando o usuario começar a diditar uma palavra da lista, aparecer o auto completar-->
+
+<input list="estado" name="estado">
+
+<datalist id="estado">
+<option value="">Selecione o estado</option>
+<option value="São Paulo">São Paulo</option>
+<option value="Rio de Janeiro">Rio de Janeiro</option>
+<option value="Minas Gerais">Minas Gerais</option>
+
+</datalist> <br><br>
+
+ <button type="button">Outra ação </button>
+ <button type="reset">Limpar </button> 
+ <button type="submit">Enviar</button> 
+
+
+</form>
 
  </body>
 
