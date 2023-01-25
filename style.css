@@ -1,0 +1,62 @@
+
+/* 
+
+>>isso é uma tag
+h1{
+	color:red;
+}
+main h1{
+	color: black;
+}
+
+
+
+h2{
+color:green;
+}
+
+p{
+	color:yellowgreen ;
+}
+
+>>> o ponto identifica uma classe no css 
+.titulo-aula{
+text-decoration:underline ;
+}
+
+.texto-azul{
+	color: blue;
+}
+
+.texto-vermelho{
+	color: red;
+}
+
+>>>> o # identifica um id no css 
+#titulo-primeira-aula{
+	text-decoration: none;
+}
+
+#titulo-segunda-aula{
+	color: brown;
+}
+
+>>> neste caso, o comentario que está dentro do tesxto vermelho 
+.texto-vermelho .Comentario{
+	color: blue;
+}
+
+
+/* neste caso, o elemento precisa ter as duas classes
+.texto-vermelho.Comentario{
+	color: green;
+}
+
+.Comentario{
+	color: red;
+}*/
+
+html{
+	color: rgba(0, 0, 255, 1.0);
+	/* pode se escrever a cor em hexadeciaml também color:#0000FF*/
+}
