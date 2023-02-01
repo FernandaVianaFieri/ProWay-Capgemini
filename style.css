@@ -59,4 +59,33 @@ text-decoration:underline ;
 html{
 	color: rgba(0, 0, 255, 1.0);
 	/* pode se escrever a cor em hexadeciaml também color:#0000FF*/
+
+	background-color: #d5dce8;
+	background-image: url("./calopsita.jpg");
+	background-repeat: no-repeat;
+	/* poderia colocar --- repeat-x ou repeat-y */
+	height: 100vh;
+	background-position:center;
+	background-size: contain;
+	/* contain serve para conter a imagem */
+	
+
+
+
+
 }
+main{
+	background-color: rgb(232, 213, 224);
+	font-style: italic;
+	font-weight: bold;
+	font-variant: normal;
+	font-size: 1.1rem;
+}
+.titulo-aula{
+	background-color:rgba(223, 232, 213, 1.0) ;
+
+}
+@font-face {
+font-family: "roboto;", sans-serif;
+  
+ @import url:'Roboto-ThinItalic.ttf';
