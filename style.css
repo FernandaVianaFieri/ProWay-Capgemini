@@ -57,7 +57,7 @@ text-decoration:underline ;
 }*/
 
 html{
-	color: rgba(0, 0, 255, 1.0);
+	color: rgba(155, 100, 70, 1.0);
 	/* pode se escrever a cor em hexadeciaml também color:#0000FF*/
 
 	background-color: #d5dce8;
@@ -70,9 +70,6 @@ html{
 	/* contain serve para conter a imagem */
 	
 
-
-
-
 }
 main{
 	background-color: rgb(232, 213, 224);
@@ -80,7 +77,42 @@ main{
 	font-weight: bold;
 	font-variant: normal;
 	font-size: 1.1rem;
+	text-transform: first-letter;
 }
+
+main p{
+	text-indent: 2rem;
+	text-align: start;
+}
+
+ h2, h3{
+text-align: center;
+}
+
+h2#titulo-primeira-aula{
+text-decoration: underline;
+letter-spacing: 0.5rem;
+}
+
+/*Pseudo seletor*/
+a:active{
+color: green;
+cursor: help;	
+}
+
+
+a:visited{
+	color: purple;
+}
+
+a:rover{
+	color: Pink;
+}
+
+p:hover{
+	color: gray;
+}
+
 .titulo-aula{
 	background-color:rgba(223, 232, 213, 1.0) ;
 
@@ -89,3 +121,4 @@ main{
 font-family: "roboto;", sans-serif;
   
  @import url:'Roboto-ThinItalic.ttf';
+
